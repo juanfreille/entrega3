@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="../img/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Barlow+Condensed:wght@200&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e9044019f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <div class="minibar-top no-selection">
+        <div class="minibar-top-text">
+            <h7>10% de descuento en efectivo / Hasta 6 cuotas sin interes</h7>
+        </div>
+    </div>
+    <!-- SECCION DEL HEADER Y NAVBAR -->
+    <header class="fuente-copada">
+        <!-- LOGO A AL IZQUIERDA -->
+        <a id="header__logo-pc" href="../index.html">
+            <img src="../img/Logo-bg.png" alt="logo">
+        </a>
+        <!-- RESTO DEL MENU -->
+        <div class="header__links">
+            <nav>
+                <input type="checkbox" id="header__check">
+                <label for="header__check" class="bar-btn"><i class="fa fa-bars"></i></label>
+                <ul class="header__nav-menu texto-xs">
+                    <li><a href="../index.html"><i class="fa fa-house fa-mio"></i>INICIO</a></li>
+                    <li><a href="./faq.html"><i class="fa fa-question-circle fa-mio"></i>PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="./tienda.html" class="header__pagina-activa"><i
+                                class="fa fa-shop fa-mio"></i>TIENDA</a></li>
+                    <li><a href="./about.html"><i class="fa fa-users fa-mio"></i>SOBRE NOSOTROS</a></li>
+                    <li><a href="./contacto.html"><i class="fa fa-envelope fa-mio"></i>CONTACTO</a></li>
+                </ul>
+            </nav>
+            <a id="header__logo-mobile" href="../index.html">
+                <img src="../img/Logo-bg.png" alt="logo" width="85">
+            </a>
+
+            <!-- PANEL DE USUARIO, CARRITO, REGISTRAR NUEVO USUARIO O LOGUEARSE -->
+            <div class="header__nav-user">
+                <a href="./cart.html" class="carrito-text ">
+                    <img src="../img/carrito.png" alt="carrito" class="imagen-carrito" />
+                    <div class="carrito-nav fuente-copada texto-xs">MI CARRITO</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="contenedor">
+        <section class="banner-contacto">
+            <h2 class="encabezado-grande texto-xxl">tienda online</h2>
+        </section>
+        <div class="title-container">
+            <h1 class="title fuente-copada">
+                nuestra tienda
+            </h1>
+        </div>
+        <section>
+
+
+            <div class="contenedor-tienda">
+                <div class="list-group list-group-mio">
+                    <a href="./tienda.html" class="list-group-item list-group-item-action active active-mio"
+                        aria-current="true">
+                        Todos
+                    </a>
+                    <a href="./pantalones.html" class="list-group-item list-group-item-action">Pantalones</a>
+                    <a href="#" class="list-group-item list-group-item-action">Buzos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Camperas</a>
+                </div>
+
+
+
+                <div class="row row-mio no-selection">
+                    <div class="col-6 col-xl-3 col-lg-4">
+                        <a href="" class="items-detalles-link">
+                            <figure>
+
+
+                                <div class="image-container">
+                                    <img src="../img/babucha.jpg" alt="babucha" />
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                </div>
+
+                                <figcaption class="ocultar-mobile">
+                                    <span class="btn-detalles">Ver detalles</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <div class="items-bottom">
+                            <a class="items-titulo">Babucha</a>
+                            <div class="items-precio">$ 16500 ARS</div>
+                        </div>
+                        <div class="items-bottom flexear">
+                            <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-toggle="modal"
+                                data-bs-target="#pagosModal">Agregar al carrito</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="pagosModal" tabindex="-1" aria-labelledby="pagosModalLabel"
+                                aria-hidden="true">
+                                <div
+                                    class="modal-dialog modal-dialog-mio modal-dialog-centered">
+                                    <div class="modal-content modal-content-mio">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span>Los pagos no han sido habilitados todavía</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary btn-mio"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-xl-3 col-lg-4">
+                        <a href="" class="items-detalles-link">
+                            <figure>
+
+                                <div class="image-container">
+                                    <img src="../img/jeans.jpg" alt="jeans" />
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                </div>
+
+
+                                <figcaption class="ocultar-mobile">
+                                    <span class="btn-detalles">Ver detalles</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <div class="items-bottom">
+                            <a class="items-titulo">Jeans</a>
+                            <div class="items-precio">$ 15500 ARS</div>
+                            <div class="items-bottom flexear">
+                                <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-toggle="modal"
+                                data-bs-target="#pagosModal">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-xl-3 col-lg-4">
+                        <a href="" class="items-detalles-link">
+                            <figure>
+
+                                <div class="image-container">
+                                    <img src="../img/joggers.jpg" alt="joggers" />
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                </div>
+
+                                <figcaption class="ocultar-mobile">
+                                    <span class="btn-detalles">Ver detalles</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <div class="items-bottom">
+                            <a class="items-titulo">Joggers</a>
+                            <div class="items-precio">$ 15500 ARS</div>
+                            <div class="items-bottom flexear">
+                                <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-toggle="modal"
+                                data-bs-target="#pagosModal">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-xl-3 col-lg-4">
+                        <a href="" class="items-detalles-link">
+                            <figure>
+
+                                <div class="image-container">
+                                    <img src="../img/sweater.jpg" alt="sweater" />
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                </div>
+
+                                <figcaption class="ocultar-mobile">
+                                    <span class="btn-detalles">Ver detalles</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <div class="items-bottom">
+                            <a class="items-titulo">Sweater</a>
+                            <div class="items-precio">$ 9500 ARS</div>
+                            <div class="items-bottom flexear">
+                                <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-toggle="modal"
+                                data-bs-target="#pagosModal">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-xl-3 col-lg-4">
+                        <a href="" class="items-detalles-link">
+                            <figure>
+
+                                <div class="image-container">
+                                    <img src="../img/buzo.jpg" alt="buzo" />
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                </div>
+
+
+
+                                <figcaption class="ocultar-mobile">
+                                    <span class="btn-detalles">Ver detalles</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <div class="items-bottom">
+                            <a class="items-titulo">Buzo</a>
+                            <div class="items-precio">$ 15500 ARS</div>
+                            <div class="items-bottom flexear">
+                                <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-toggle="modal"
+                                data-bs-target="#pagosModal">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-xl-3 col-lg-4">
+                        <a href="" class="items-detalles-link">
+                            <figure>
+
+                                <div class="image-container">
+                                    <img src="../img/campera.jpg" alt="campera" />
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                </div>
+
+                                <figcaption class="ocultar-mobile">
+                                    <span class="btn-detalles">Ver detalles</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <div class="items-bottom">
+                            <a class="items-titulo">Campera</a>
+                            <div class="items-precio">$ 20500 ARS</div>
+                            <div class="items-bottom flexear">
+                                <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-toggle="modal"
+                                data-bs-target="#pagosModal">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-xl-3 col-lg-4">
+                        <a href="" class="items-detalles-link">
+                            <figure>
+
+                                <div class="image-container">
+                                    <img src="../img/camisa.jpg" alt="camisa" />
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                </div>
+
+                                <figcaption class="ocultar-mobile">
+                                    <span class="btn-detalles">Ver detalles</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <div class="items-bottom">
+                            <a class="items-titulo">Camisa</a>
+                            <div class="items-precio">$ 15500 ARS</div>
+                            <div class="items-bottom flexear">
+                                <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-toggle="modal"
+                                data-bs-target="#pagosModal">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-xl-3 col-lg-4">
+                        <a href="" class="items-detalles-link">
+                            <figure>
+
+
+                                <div class="image-container">
+                                    <img src="../img/musculosa.jpg" alt="musculosa" />
+                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                </div>
+                                <figcaption class="ocultar-mobile">
+                                    <span class="btn-detalles">Ver detalles</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <div class="items-bottom">
+                            <a class="items-titulo">Musculosa</a>
+                            <div class="items-precio">$ 10500 ARS</div>
+                            <div class="items-bottom flexear">
+                                <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-toggle="modal"
+                                data-bs-target="#pagosModal">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="contenedor__back-btn">
+        <a href="../index.html"><i class="fa fa-angle-double-left back-btn"></i></a>
+    </div>
+    </section>
+    <!-- SECCION DEL FOOTER, DONDE UBICAMOS REDES SOCIALES, AGREGAR ENLACES MAS ADELANTE -->
+    <section class="footer_style">
+        <footer>
+            <a href="https://www.facebook.com/jifstylestore/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/jifstylestore" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://ar.linkedin.com/company/jifstyle" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/channel" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/jifstylestore/" target="_blank" class="fa fa-instagram"></a>
+        </footer>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="JIF Style es una tienda online de indumentaria casual, homewear, streetwear, y ropa urbana en general. Contamos con una basta experiencia en el mercado textil. Trabajamos prendas perdurables, en donde priman la comodidad y el estilo. Contamos con tienda física en Av. Duarte Quirós 1400, Córdoba, donde podrás ver toda nuestra colección y productos, con el mejor asesoramiento de ventas.">
+    <title>JIF STYLE STORE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./img/favicon_io/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Barlow+Condensed:wght@200&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e9044019f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="minibar-top no-selection">
+        <div class="minibar-top-text">
+            <h7>10% de descuento en efectivo / Hasta 6 cuotas sin interes</h7>
+        </div>
+    </div>
+
+    <!-- SECCION DEL HEADER Y NAVBAR -->
+    <header class="fuente-copada">
+        <!-- LOGO A AL IZQUIERDA -->
+        <a id="header__logo-pc" href="index.html">
+            <img src="./img/Logo-bg.png" alt="logo">
+        </a>
+        <!-- RESTO DEL MENU -->
+        <div class="header__links">
+            <nav>
+                <input type="checkbox" id="header__check">
+                <label for="header__check" class="bar-btn"><i class="fa fa-bars"></i></label>
+                <ul class="header__nav-menu texto-xs">
+                    <li><a href="index.html" class="header__pagina-activa"><i class="fa fa-house fa-mio"></i>INICIO</a>
+                    </li>
+                    <li><a href="./pages/faq.html"><i class="fa fa-question-circle fa-mio"></i>PREGUNTAS FRECUENTES</a>
+                    </li>
+                    <li><a href="./pages/tienda.html"><i class="fa fa-shop fa-mio"></i>TIENDA</a></li>
+                    <li><a href="./pages/about.html"><i class="fa fa-users fa-mio"></i>SOBRE NOSOTROS</a></li>
+                    <li><a href="./pages/contacto.html"><i class="fa fa-envelope fa-mio"></i>CONTACTO</a></li>
+                </ul>
+            </nav>
+            <a id="header__logo-mobile" href="index.html">
+                <img src="./img/Logo-bg.png" alt="logo" width="85">
+            </a>
+            <!-- PANEL DE USUARIO, CARRITO, REGISTRAR NUEVO USUARIO O LOGUEARSE -->
+            <div class="header__nav-user">
+                <a href="./pages/cart.html" class="carrito-text ">
+                    <img src="./img/carrito.png" alt="carrito" class="imagen-carrito" />
+                    <div class="carrito-nav fuente-copada texto-xs">MI CARRITO</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- AGREGAMOS LAS SECCIONES PRINCIPALES -->
+    <!-- SECCION DE LA PORTADA DONDE VAMOS A METER DISTINTOS BANNERS CON OFERTAS ETC -->
+    <section class="portada-section">
+        <!-- AGREGO CONTENEDOR y BOOTSTRAP -->
+        <div class="contenedor">
+            <div class="row no-selection">
+                <div class="col-lg-6 banner-izq ocultar-mobile">
+                    <div class="top-text">JIF STYLE</div>
+                    <h1 class="fuente-copada texto-xxl">Diseños exclusivos<br />Mirá las promos</h1>
+                    <p>Diseños modernos y únicos creados por nuestra marca</p>
+                    <a href="./pages/tienda.html" class="botones-rojos">promos de invierno</a>
+                    <div class="seccion-medios">
+                        <h1 class="fuente-copada texto-xxl">Medios de pago</h1>
+                        <img src="./img/medios_pago/visa@2x.png" class="medios-img" alt="tarjeta visa">
+                        <img src="./img/medios_pago/mastercard@2x.png" class="medios-img" alt="tarjeta mastercard">
+                        <img src="./img/medios_pago/amex@2x.png" class="medios-img" alt="tarjeta amex">
+                        <img src="./img/medios_pago/banelco@2x.png" class="medios-img" alt="tarjeta banelco">
+                        <img src="./img/medios_pago/tarjeta-naranja@2x.png" class="medios-img" alt="tarjeta naranja">
+                        <img src="./img/medios_pago/mercadopago@2x.png" class="medios-img" alt="tarjeta mercadopago">
+                        <img src="./img/medios_pago/pagofacil@2x.png" class="medios-img" alt="pago facil">
+                        <img src="./img/medios_pago/rapipago@2x.png" class="medios-img" alt="rapipago">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img src="./img/invierno.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-md-block text-uppercase no-selection">
+                                    <h2>promos de invierno</h2>
+                                    <h3>2x1 en bufandas</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="./img/verano.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-md-block text-uppercase no-selection">
+                                    <h2>día del padre</h2>
+                                    <h3>10% descuento</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!-- SECCION COLECCION, METEMOS ALGUNAS PRENDAS PRINCIPALES O NUEVOS INGRESOS -->
+    <section class="coleccion-section no-selection ocultar-mobile">
+        <p class="top-text">Nuestra tienda online</p>
+        <h2 class="fuente-copada texto-xxl">nuevos ingresos</h1>
+            <div class="contenedor">
+                <div class="row caja-coleccion">
+                    <div class="col-lg-4">
+                        <div class="pic-zoom">
+                            <a href="./pages/tienda.html"><img src="./img/babucha.jpg" alt="babucha" /></a>
+                        </div>
+                        <div class="items-texto">
+                            <a href="./pages/tienda.html" class="items-titulo">Babucha</a>
+                            <div class="items-precio">$ 16500 ARS</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pic-zoom">
+                            <a href="./pages/tienda.html">
+                                <img src="./img/jeans.jpg" alt="jeans" />
+                            </a>
+                        </div>
+                        <div class="items-texto">
+                            <a href="./pages/tienda.html" class="items-titulo">Jeans</a>
+                            <div class="items-precio">$ 15500 ARS</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pic-zoom">
+                            <a href="./pages/tienda.html">
+                                <img src="./img/joggers.jpg" alt="joggers" />
+                            </a>
+                        </div>
+                        <div class="items-texto">
+                            <a href="./pages/tienda.html" class="items-titulo">Joggers</a>
+                            <div class="items-precio">$ 15500 ARS</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./pages/tienda.html" class="botones-rojos">VER TODOS LOS PRODUCTOS</a>
+            </div>
+    </section>
+
+    <!-- AGREGAMOS UNA SECCION DE TALLES, PARA SABER COMO VAN, IDEALMENTE QUE SEA UN POPUP O ALGO POR EL ESTILO -->
+
+    <section class="section-talle ocultar-mobile">
+        <!-- AGREGO CONTENEDOR -->
+        <div class="banner-div no-selection ocultar-mobile">
+            <div class="top-text">JIF STYLE</div>
+            <h2 class="fuente-copada texto-xxl">No sabés tu talle?</h2>
+            <p style="color:darkred">Utilizá nuestra guía de talles para saber cual te corresponde.</p>
+            <!-- AGREGAMOS BOTON -->
+            <button type="button" class="btn btn-primary btn-mio" data-bs-toggle="modal" data-bs-target="#talleModal">
+                Guía de talles
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="talleModal" tabindex="-1" aria-labelledby="talleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-mio modal-dialog-centered">
+                    <div class="modal-content modal-content-guia">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="talleModalLabel">Guía de talles</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="modal-img" src="./img/talles-mobile.jpg" alt="talles">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary btn-mio"
+                                data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION DE NEWSLETTER PARA SUSCRIBIRSE -->
+    <section class="mobile-section">
+        <div class="fuente-copada flyer">nuevos ingresos</div>
+        <div class="mobile-btn-container">
+            <img class="mobile-banner-img" src="./img/camisah.jpg" alt="coleccion-camisas">
+            <a href="./pages/tienda.html">ver en tienda</a>
+        </div>
+        <div class="mobile-btn-container">
+            <img class="mobile-banner-img" src="./img/remeras.jpg" alt="coleccion-camisas">
+            <a href="./pages/tienda.html">ver en tienda</a>
+        </div>
+    </section>
+    <section class="newsletter-section">
+        <div class="caja-newsletter no-selection">
+            <p class="top-text">Suscribite al newsletter</p>
+            <h1 class="fuente-copada texto-xxl">
+                <span>Enterate de nuevos ingresos, promos y descuentos</span>
+                <!-- UTILIZAMOS LA FONT AWESOME PARA AGREGAR EL ICONO DE MAIL DENTRO DE LA CAJA -->
+                <div class="sobre-icon">
+                    <input type="text" class="news-suscribir" placeholder="Ingresá tu email" />
+                    <!-- AGREGAR FUNCIONALIDAD MAS ADELANTE -->
+                    <input type="submit" value="Suscribirme" class="botones-rojos suscribir-button" />
+                </div>
+                <label>
+                    <span class="suscribite">Registrá tu email para recibir las ultimas novedades</span>
+                </label>
+        </div>
+    </section>
+    <!-- SECCION DEL FOOTER, DONDE UBICAMOS REDES SOCIALES, AGREGAR ENLACES MAS ADELANTE -->
+    <section class="footer_style">
+        <footer>
+            <a href="https://www.facebook.com/jifstylestore/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/jifstylestore" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://ar.linkedin.com/company/jifstyle" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/channel" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/jifstylestore/" target="_blank" class="fa fa-instagram"></a>
+        </footer>
+    </section>
+</body>
+
+</html>

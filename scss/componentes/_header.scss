@@ -1,0 +1,57 @@
+header {
+    z-index: 9999;
+    background-color: $background-color_2;
+    position: sticky;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    display: flex;
+    padding: 0 1rem;
+    top: 0;
+}
+
+#header__logo-pc {
+    display: flex;
+    height: 2.7rem;
+    align-self: center;
+
+    img {
+        &:hover {
+            filter: drop-shadow(2px 4px 6px $color_negro);
+        }
+    }
+}
+
+.header__nav-menu {
+    li {
+        a {
+            i {
+                display: none;
+            }
+        }
+    }
+
+    display: flex;
+    margin-bottom: 0;
+}
+
+#header__logo-mobile {
+    display: none;
+}
+
+.header__pagina-activa {
+    background-color: $color_negro !important;
+    border-radius: 12px;
+    padding: 10px 10px 10px 10px;
+    color: $color_blanco;
+}
+
+.header__nav-user {
+    border-left: 1px solid $color_texto-parrafos;
+    padding-left: 10px;
+}
+
+.header__links {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}

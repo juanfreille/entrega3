@@ -1,0 +1,18 @@
+$margin-padding-val: (
+    margen-cero: 0,
+    padding-cero: 0,
+);
+
+$texto: (
+    "xs": 14.5px,
+    "md": 20px,
+    "lg": 24px,
+    "xl": 40px,
+    "xxl": 44px
+);
+
+@each $nombre, $size in $texto {
+    .texto-#{$nombre} {
+        font-size: $size;
+    }
+}
