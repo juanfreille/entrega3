@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="JIF Style es una tienda online de indumentaria casual, homewear, streetwear, y ropa urbana en general. Contamos con una basta experiencia en el mercado textil. Trabajamos prendas perdurables, en donde priman la comodidad y el estilo. Contamos con tienda física en Av. Duarte Quirós 1400, Córdoba, donde podrás ver toda nuestra colección y productos, con el mejor asesoramiento de ventas.">
-    <title>JIF STYLE STORE</title>
+        content="JIF Style es una tienda online de indumentaria casual, homewear, streetwear, y ropa urbana. Prendas perdurables, en donde priman la comodidad y el estilo.">
+    <meta name="keywords"
+        content="ecommerce, hombre, remeras, camperas, jeans, pantalones, chombas, casmisas, descuentos, ofertas, eshop, indumentaria, ropa">
+        <link rel="canonical" href="./index.html">
+        <title>JIF STYLE STORE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="./css/styles.css" rel="stylesheet" type="text/css" />
@@ -29,7 +32,7 @@
     <header class="fuente-copada">
         <!-- LOGO A AL IZQUIERDA -->
         <a id="header__logo-pc" href="index.html">
-            <img src="./img/Logo-bg.png" alt="logo">
+            <img src="./img/Logo-bg.webp" alt="logo de jifstyle">
         </a>
         <!-- RESTO DEL MENU -->
         <div class="header__links">
@@ -47,12 +50,14 @@
                 </ul>
             </nav>
             <a id="header__logo-mobile" href="index.html">
-                <img src="./img/Logo-bg.png" alt="logo" width="85">
+                <img src="./img/Logo-bg.webp" alt="logo de jifstyle" width="85">
             </a>
             <!-- PANEL DE USUARIO, CARRITO, REGISTRAR NUEVO USUARIO O LOGUEARSE -->
+            <div class="vr ocultar-mobile"></div>
+
             <div class="header__nav-user">
                 <a href="./pages/cart.html" class="carrito-text ">
-                    <img src="./img/carrito.png" alt="carrito" class="imagen-carrito" />
+                    <img src="./img/carrito.webp" alt="carrito de compras" class="imagen-carrito" />
                     <div class="carrito-nav fuente-copada texto-xs">MI CARRITO</div>
                 </a>
             </div>
@@ -65,111 +70,107 @@
     <!-- AGREGAMOS LAS SECCIONES PRINCIPALES -->
     <!-- SECCION DE LA PORTADA DONDE VAMOS A METER DISTINTOS BANNERS CON OFERTAS ETC -->
     <section class="portada-section">
-        <!-- AGREGO CONTENEDOR y BOOTSTRAP -->
-        <div class="contenedor">
-            <div class="row no-selection">
-                <div class="col-lg-6 banner-izq ocultar-mobile">
-                    <div class="top-text">JIF STYLE</div>
-                    <h1 class="fuente-copada texto-xxl">Diseños exclusivos<br />Mirá las promos</h1>
-                    <p>Diseños modernos y únicos creados por nuestra marca</p>
-                    <a href="./pages/tienda.html" class="botones-rojos">promos de invierno</a>
-                    <div class="seccion-medios">
-                        <h1 class="fuente-copada texto-xxl">Medios de pago</h1>
-                        <img src="./img/medios_pago/visa@2x.png" class="medios-img" alt="tarjeta visa">
-                        <img src="./img/medios_pago/mastercard@2x.png" class="medios-img" alt="tarjeta mastercard">
-                        <img src="./img/medios_pago/amex@2x.png" class="medios-img" alt="tarjeta amex">
-                        <img src="./img/medios_pago/banelco@2x.png" class="medios-img" alt="tarjeta banelco">
-                        <img src="./img/medios_pago/tarjeta-naranja@2x.png" class="medios-img" alt="tarjeta naranja">
-                        <img src="./img/medios_pago/mercadopago@2x.png" class="medios-img" alt="tarjeta mercadopago">
-                        <img src="./img/medios_pago/pagofacil@2x.png" class="medios-img" alt="pago facil">
-                        <img src="./img/medios_pago/rapipago@2x.png" class="medios-img" alt="rapipago">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="4000">
-                                <img src="./img/invierno.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-md-block text-uppercase no-selection">
-                                    <h2>promos de invierno</h2>
-                                    <h3>2x1 en bufandas</h3>
-                                </div>
-                            </div>
-                            <div class="carousel-item" data-bs-interval="4000">
-                                <img src="./img/verano.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-md-block text-uppercase no-selection">
-                                    <h2>día del padre</h2>
-                                    <h3>10% descuento</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+        <div class="row no-selection">
+            <div class="col-lg-6 banner-izq ocultar-mobile">
+                <div class="top-text">JIF STYLE</div>
+                <h1 class="fuente-copada texto-xxl">Diseños exclusivos<br />Mirá las promos</h1>
+                <p>Diseños modernos y únicos creados por nuestra marca</p>
+                <a href="./pages/tienda.html" class="botones-rojos">promos de invierno</a>
+                <div class="seccion-medios">
+                    <h1 class="fuente-copada texto-xxl">Medios de pago</h1>
+                    <img src="./img/medios_pago/visa-2x.webp" class="medios-img" alt="tarjeta visa">
+                    <img src="./img/medios_pago/mastercard-2x.webp" class="medios-img" alt="tarjeta mastercard">
+                    <img src="./img/medios_pago/amex-2x.webp" class="medios-img" alt="tarjeta amex">
+                    <img src="./img/medios_pago/banelco-2x.webp" class="medios-img" alt="tarjeta banelco">
+                    <img src="./img/medios_pago/tarjeta-naranja-2x.webp" class="medios-img" alt="tarjeta naranja">
+                    <img src="./img/medios_pago/mercadopago-2x.webp" class="medios-img" alt="tarjeta mercadopago">
+                    <img src="./img/medios_pago/pagofacil-2x.webp" class="medios-img" alt="pago facil">
+                    <img src="./img/medios_pago/rapipago-2x.webp" class="medios-img" alt="rapipago">
                 </div>
             </div>
+            <div class="col-lg-6">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="./img/invierno.webp" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block text-uppercase no-selection">
+                                <h2>promos de invierno</h2>
+                                <h3>2x1 en bufandas</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="./img/verano.webp" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-md-block text-uppercase no-selection">
+                                <h2>día del padre</h2>
+                                <h3>10% descuento</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
 
     </section>
     <!-- SECCION COLECCION, METEMOS ALGUNAS PRENDAS PRINCIPALES O NUEVOS INGRESOS -->
     <section class="coleccion-section no-selection ocultar-mobile">
         <p class="top-text">Nuestra tienda online</p>
         <h2 class="fuente-copada texto-xxl">nuevos ingresos</h1>
-            <div class="contenedor">
-                <div class="row caja-coleccion">
-                    <div class="col-lg-4">
-                        <div class="pic-zoom">
-                            <a href="./pages/tienda.html"><img src="./img/babucha.jpg" alt="babucha" width="333" height="500"/></a>
-                        </div>
-                        <div class="items-texto">
-                            <a href="./pages/tienda.html" class="items-titulo">Babucha</a>
-                            <div class="items-precio">$ 16500 ARS</div>
-                        </div>
+            <div class="row caja-coleccion">
+                <div class="col-6 col-xl-4 col-lg-4">
+                    <div class="pic-zoom">
+                        <a href="./pages/tienda.html"><img src="./img/babucha.webp" alt="babucha" width="333"
+                                height="500" /></a>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="pic-zoom">
-                            <a href="./pages/tienda.html">
-                                <img src="./img/jeans.jpg" alt="jeans" width="333" height="500"/>
-                            </a>
-                        </div>
-                        <div class="items-texto">
-                            <a href="./pages/tienda.html" class="items-titulo">Jeans</a>
-                            <div class="items-precio">$ 15500 ARS</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="pic-zoom">
-                            <a href="./pages/tienda.html">
-                                <img src="./img/joggers.jpg" alt="joggers" width="333" height="500"/>
-                            </a>
-                        </div>
-                        <div class="items-texto">
-                            <a href="./pages/tienda.html" class="items-titulo">Joggers</a>
-                            <div class="items-precio">$ 15500 ARS</div>
-                        </div>
+                    <div class="items-bottom">
+                        <a class="items-titulo">Babucha</a>
+                        <div class="items-precio">$ 16500 ARS</div>
                     </div>
                 </div>
-                <a href="./pages/tienda.html" class="botones-rojos">VER TODOS LOS PRODUCTOS</a>
+                <div class="col-6 col-xl-4 col-lg-4">
+                    <div class="pic-zoom">
+                        <a href="./pages/tienda.html">
+                            <img src="./img/jeans.webp" alt="jeans" width="333" height="500" />
+                        </a>
+                    </div>
+                    <div class="items-texto">
+                        <a href="./pages/tienda.html" class="items-titulo">Jeans</a>
+                        <div class="items-precio">$ 15500 ARS</div>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-4 col-lg-4">
+                    <div class="pic-zoom">
+                        <a href="./pages/tienda.html">
+                            <img src="./img/joggers.webp" alt="joggers" width="333" height="500" />
+                        </a>
+                    </div>
+                    <div class="items-texto">
+                        <a href="./pages/tienda.html" class="items-titulo">Joggers</a>
+                        <div class="items-precio">$ 15500 ARS</div>
+                    </div>
+                </div>
             </div>
+            <a href="./pages/tienda.html" class="botones-rojos">VER TODOS LOS PRODUCTOS</a>
     </section>
 
     <!-- AGREGAMOS UNA SECCION DE TALLES, PARA SABER COMO VAN, IDEALMENTE QUE SEA UN POPUP O ALGO POR EL ESTILO -->
 
     <section class="section-talle ocultar-mobile">
-        <!-- AGREGO CONTENEDOR -->
         <div class="banner-div no-selection ocultar-mobile">
             <div class="top-text">JIF STYLE</div>
             <h2 class="fuente-copada texto-xxl">No sabés tu talle?</h2>
@@ -187,7 +188,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img class="modal-img" src="./img/talles-mobile.jpg" alt="talles">
+                            <img class="modal-img" src="./img/talles-mobile.webp" alt="talles de ropa">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary btn-mio"
@@ -202,11 +203,11 @@
     <section class="mobile-section">
         <div class="fuente-copada flyer">nuevos ingresos</div>
         <div class="mobile-btn-container">
-            <img class="mobile-banner-img" src="./img/camisah.jpg" alt="coleccion-camisas">
+            <img class="mobile-banner-img" src="./img/camisah.webp" alt="coleccion de camisas">
             <a href="./pages/tienda.html">ver en tienda</a>
         </div>
         <div class="mobile-btn-container">
-            <img class="mobile-banner-img" src="./img/remeras.jpg" alt="coleccion-camisas">
+            <img class="mobile-banner-img" src="./img/remeras.webp" alt="coleccion de remeras">
             <a href="./pages/tienda.html">ver en tienda</a>
         </div>
     </section>

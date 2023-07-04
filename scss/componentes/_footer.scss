@@ -1,6 +1,5 @@
 footer {
-    display: flex;
-    justify-content: center;
+    @extend %flexy-center;
 
     a {
         text-decoration: none;

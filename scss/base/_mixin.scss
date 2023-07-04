@@ -1,14 +1,9 @@
-@mixin banner() {
+@mixin banner($banner_padding) {
     width: 50%;
     flex-direction: column;
     align-items: flex-start;
     display: flex;
     align-self: center;
     text-align: left;
-}
-
-@mixin cajas() {
-    text-align: center;
-    margin: 0 auto 0 auto;
-    padding: 0 1.4% 0 1.4%;
+    padding: $banner_padding;
 }

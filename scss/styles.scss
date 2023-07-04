@@ -6,6 +6,7 @@
 @import './componentes/form';
 @import './base/maps';
 @import './base/mixin';
+@import './base/extend';
 
 .modal-dialog-mio {
     max-width: fit-content;
@@ -82,12 +83,13 @@
 }
 
 .portada-section {
-    background-image: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .8)), url("../img/07-training.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .8)), url("../img/07-training.webp");
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 .coleccion-section {
     padding-top: 10px;
+    text-align: center;
 }
 
 .newsletter-section {
@@ -114,7 +116,7 @@
 }
 
 .section-talle {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, .89) 13%, rgba(255, 255, 255, 0) 57%), url("../img/banner.png");
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .89) 13%, rgba(255, 255, 255, 0) 57%), url("../img/banner.webp");
     background-position: 0 0, 50% 33%;
     background-size: auto, cover;
     margin-top: 3%;
@@ -131,7 +133,9 @@
 }
 
 .caja-newsletter {
-    @include cajas;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 0 1.4% 0 1.4%;
     width: 60%;
 }
 
@@ -143,6 +147,21 @@
     width: 100%;
     max-width: 1200px;
     border-radius: 1rem;
+
+    img {
+        transform: scale(1);
+        transition: .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+    }
+}
+
+.contenedor img {
+    width: auto;
+    max-height: 28rem;
 }
 
 .contenedor-tienda {
@@ -150,16 +169,14 @@
     margin: 0 auto;
     width: 100%;
     max-width: 94%;
-    display: flex;
-    justify-content: center;
+    @extend %flexy-center;
+
+    img {
+        width: auto;
+        max-height: 22rem;
+    }
 }
 
-.caja-tienda {
-    @include cajas;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
 .news-suscribir {
     width: 34%;
@@ -217,10 +234,6 @@
     font-size: small;
 }
 
-.items-contenedor {
-    margin-bottom: 20px;
-}
-
 .items-titulo {
     color: $color_items;
     font-size: 18px;
@@ -241,13 +254,15 @@
 }
 
 .banner-div {
-    @include banner();
-    padding: 3% 4%;
+    // @extend %banner;
+    @include banner (3% 4%);
+    // padding: 3% 4%;
 }
 
 .banner-izq {
-    @include banner();
-    padding: 0% 4% 0% 3%;
+    // @extend %banner;
+    @include banner (0% 4% 0% 3%);
+    // padding: 0% 4% 0% 3%;
 }
 
 .seccion-medios {
@@ -295,11 +310,18 @@
         background-color: $color_texto-parrafos;
         border-color: $color_transparent;
     }
+    &.active,
+    &.show,
+    &:first-child:active {
+        color: $color_blanco;
+        background-color: $color_texto-parrafos;
+        border-color: $color_transparent;
+    }
+
 }
 
 .flexear {
-    display: flex;
-    justify-content: center;
+    @extend %flexy-center;
     text-align: center !important;
 }
 
@@ -332,14 +354,13 @@
 }
 
 .contenedor-contacto {
-    display: flex;
-    justify-content: space-between;
+    @extend %flexy-space;
     padding: 0 5% 0 5%;
     margin-top: 2rem;
 }
 
-.banner-contacto {
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2) 13%, rgba(255, 255, 255, 0) 63%), url("../img/locales.jpg");
+.banner-encabezado {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2) 13%, rgba(255, 255, 255, 0) 63%), url("../img/locales.webp");
     background-position: 0 0, 50% 33%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -400,8 +421,7 @@ nav {
     height: 21px;
     text-transform: uppercase;
     font-size: 0.7rem;
-    display: flex;
-    justify-content: center;
+    @extend %flexy-center;
 
     .minibar-top-text {
         display: inline-block;
@@ -409,24 +429,8 @@ nav {
     }
 }
 
-.caja-coleccion img {
-    transform: scale(1);
-    transition: .3s ease-in-out;
-    // width: auto;
-    // max-height: 300px;
-}
-
-.caja-coleccion img:hover {
-    transform: scale(1.2);
-}
-
 .pic-zoom {
     overflow: hidden;
-}
-
-.contenedor-tienda img {
-    width: auto;
-    max-height: 22rem;
 }
 
 figure {
@@ -456,19 +460,6 @@ figcaption {
     display: none;
 }
 
-.items-detalles-link:hover .mask {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-attachment: fixed;
-}
-
 .items-detalles-link {
     display: inline-block;
     max-width: 245px;
@@ -483,6 +474,19 @@ figcaption {
         figcaption {
             opacity: 1;
         }
+    }
+
+    &:hover .mask {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-attachment: fixed;
     }
 }
 
