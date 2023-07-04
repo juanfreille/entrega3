@@ -193,6 +193,10 @@
         display: contents;
     }
 
+    .modal-dialog-mio {
+        max-width: none;
+    }
+
     .imagen-carrito {
         width: 25px;
     }
@@ -206,6 +210,7 @@
     .contenedor-tienda {
         padding: 0;
         max-width: 100%;
+
         a {
             img {
                 max-height: 15rem;
@@ -222,7 +227,7 @@
     .btn-agregar-carrito {
         padding: 0.1em 1.25em;
     }
-    
+
 
     .contenedor-contacto {
         flex-direction: column;

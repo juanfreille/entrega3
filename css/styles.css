@@ -208,11 +208,6 @@ header {
 .modal-dialog-mio {
   max-width: fit-content;
 }
-@media (max-width: 576px) {
-  .modal-dialog-mio {
-    max-width: none;
-  }
-}
 .modal-dialog-mio .modal-content-mio {
   border: 1px solid transparent;
   --bs-modal-header-border-color: $color_transparent;
@@ -272,6 +267,7 @@ header {
 .portada-section {
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url("../img/07-training.webp");
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 
 .coleccion-section {
@@ -447,6 +443,10 @@ header {
   align-self: center;
   text-align: left;
   padding: 0% 4% 0% 3%;
+}
+
+.banner-der {
+  align-self: center;
 }
 
 .seccion-medios {
@@ -841,6 +841,9 @@ figcaption {
   }
   .header__links {
     display: contents;
+  }
+  .modal-dialog-mio {
+    max-width: none;
   }
   .imagen-carrito {
     width: 25px;

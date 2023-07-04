@@ -11,10 +11,6 @@
 .modal-dialog-mio {
     max-width: fit-content;
 
-    @media (max-width: 576px) {
-        max-width: none;
-    }
-
     .modal-content-mio {
         border: 1px solid $color_transparent;
         --bs-modal-header-border-color: $color_transparent;
@@ -85,6 +81,7 @@
 .portada-section {
     background-image: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .8)), url("../img/07-training.webp");
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
 .coleccion-section {
@@ -254,16 +251,17 @@
 }
 
 .banner-div {
-    // @extend %banner;
     @include banner (3% 4%);
-    // padding: 3% 4%;
 }
 
 .banner-izq {
-    // @extend %banner;
     @include banner (0% 4% 0% 3%);
-    // padding: 0% 4% 0% 3%;
 }
+
+.banner-der {
+    align-self: center;
+}
+
 
 .seccion-medios {
     margin-top: 2rem;
@@ -310,6 +308,7 @@
         background-color: $color_texto-parrafos;
         border-color: $color_transparent;
     }
+
     &.active,
     &.show,
     &:first-child:active {
