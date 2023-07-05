@@ -55,7 +55,7 @@
             </a>
 
             <!-- PANEL DE USUARIO, CARRITO, REGISTRAR NUEVO USUARIO O LOGUEARSE -->
-            <div class="vr ocultar-mobile" style="align-self: center;"></div>
+            <div class="vr ocultar-mobile vr-mio"></div>
             <div class="header__nav-user">
                 <a href="./cart.html" class="carrito-text ">
                     <img src="../img/carrito.webp" alt="carrito de compras" class="imagen-carrito" />
@@ -75,80 +75,71 @@
         </div>
         <section>
 
+            <div class="dropdown mobile-section">
+                <a class="btn btn-lg dropdown-toggle btn-dropdown-mio" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Buzos
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item dropdown-item-mio" href="./tienda.html">Todos los productos</a></li>
+                    <li><a class="dropdown-item dropdown-item-mio" href="./pantalones.html">Pantalones</a></li>
+                    <li><a class="dropdown-item dropdown-item-mio" href="./buzos.html">Buzos</a></li>
+                </ul>
+            </div>
+
 
             <div class="contenedor-tienda">
                 <div class="list-group list-group-mio ocultar-mobile">
                     <a href="./tienda.html" class="list-group-item list-group-item-action" aria-current="true">
                         Todos
                     </a>
-                    <a href="./pantalones.html"
-                        class="list-group-item list-group-item-action">Pantalones</a>
+                    <a href="./pantalones.html" class="list-group-item list-group-item-action">Pantalones</a>
                     <a href="./buzos.html" class="list-group-item list-group-item-action active active-mio">Buzos</a>
                 </div>
 
 
-
+                <!-- AGREGO PEQUEÑO TRUCO PARA PODER DARLE OPACIDAD A LAS IMAGENES SIN MODIFICAR LA OPACIDAD DEL HIJO -->
                 <div class="row row-mio no-selection">
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
                                 <div class="image-container">
                                     <img src="../img/sweater.webp" alt="sweater" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
                         <div class="items-bottom">
-                            <a class="items-titulo">Sweater</a>
+                            <p class="items-titulo">Sweater</p>
                             <div class="items-precio">$ 9500 ARS</div>
                         </div>
                         <div class="items-bottom flexear">
-
-
-
-
                             <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-toggle="modal"
                                 data-bs-target="#pagosModal">Agregar al carrito</button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="pagosModal" tabindex="-1" aria-labelledby="pagosModalLabel">
-                                <div
-                                    class="modal-dialog modal-dialog-mio modal-dialog-centered">
-                                    <div class="modal-content modal-content-mio">
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <span>Los pagos no han sido habilitados todavía</span>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary btn-mio"
-                                                data-bs-dismiss="modal">Cerrar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
 
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
                                 <div class="image-container">
                                     <img src="../img/buzo.webp" alt="buzo" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
                         <div class="items-bottom">
-                            <a class="items-titulo">Buzo</a>
+                            <p class="items-titulo">Buzo</p>
                             <div class="items-precio">$ 15500 ARS</div>
                         </div>
                         <div class="items-bottom flexear">
@@ -158,19 +149,20 @@
                     </div>
 
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
                                 <div class="image-container">
                                     <img src="../img/buzo2.webp" alt="canguro" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
                         <div class="items-bottom">
-                            <a class="items-titulo">Canguro</a>
+                            <p class="items-titulo">Canguro</p>
                             <div class="items-precio">$ 15500 ARS</div>
                         </div>
                         <div class="items-bottom flexear">
@@ -198,6 +190,44 @@
             <a href="https://www.instagram.com/jifstylestore/" target="_blank" class="fa fa-instagram"></a>
         </footer>
     </section>
+
+
+    <!-- MODALS -->
+
+    <!-- MODAL PAGOS -->
+    <div class="modal fade" id="pagosModal" tabindex="-1" aria-labelledby="pagosModalLabel">
+        <div class="modal-dialog modal-dialog-mio modal-dialog-centered">
+            <div class="modal-content modal-content-mio">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>Los pagos no han sido habilitados todavía</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-mio" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DETALLES -->
+    <div class="modal fade" id="detallesModal" tabindex="-1" aria-labelledby="detallesModalLabel">
+        <div class="modal-dialog modal-dialog-mio modal-dialog-centered">
+            <div class="modal-content modal-content-mio">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>Acá direccionaría a una html del producto con stock, talles, materiales, colores, etc</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-mio" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

@@ -55,7 +55,7 @@
             </a>
 
             <!-- PANEL DE USUARIO, CARRITO, REGISTRAR NUEVO USUARIO O LOGUEARSE -->
-            <div class="vr ocultar-mobile" style="align-self: center;"></div>
+            <div class="vr ocultar-mobile vr-mio"></div>
             <div class="header__nav-user">
                 <a href="./cart.html" class="carrito-text ">
                     <img src="../img/carrito.webp" alt="carrito de compras" class="imagen-carrito" />
@@ -64,6 +64,7 @@
             </div>
         </div>
     </header>
+
     <div class="contenedor">
         <section class="banner-encabezado">
             <h2 class="encabezado-grande texto-xxl">tienda online</h2>
@@ -73,32 +74,29 @@
                 nuestra tienda
             </h1>
         </div>
+
         <section>
 
+            <!-- AGREGO DROPDOWN PARA MOBILE -->
+
             <div class="dropdown mobile-section">
-                <a class="btn btn-lg dropdown-toggle" style="color: white;
-                background-color: #1B1B1B;
-                height: auto;
-                text-transform: uppercase;
-                border-radius: 0.375rem;
-                font-size: 12px;
-                text-decoration: none;
-                margin: 0 0.8rem;
-                width: -webkit-fill-available;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  Filtrar
+                <a class="btn btn-lg dropdown-toggle btn-dropdown-mio" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Todos los productos
                 </a>
-              
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                <ul class="dropdown-menu">
                     <li><a class="dropdown-item dropdown-item-mio" href="./tienda.html">Todos los productos</a></li>
                     <li><a class="dropdown-item dropdown-item-mio" href="./pantalones.html">Pantalones</a></li>
-                  <li><a class="dropdown-item dropdown-item-mio" href="./buzos.html">Buzos</a></li>
+                    <li><a class="dropdown-item dropdown-item-mio" href="./buzos.html">Buzos</a></li>
                 </ul>
-              </div>
-              
-
+            </div>
 
 
             <div class="contenedor-tienda">
+
+                <!-- AGREGO UN LISTGROUP PARA VERSION DESKTOP -->
+
                 <div class="list-group list-group-mio ocultar-mobile">
                     <a href="./tienda.html" class="list-group-item list-group-item-action active active-mio"
                         aria-current="true">
@@ -109,19 +107,23 @@
                 </div>
 
 
+                <!-- AGREGO LAS COLUMNAS PARA LAS FOTOS CON BOOTSTRAP -->
+
                 <div class="row row-mio no-selection">
+                    <!-- SI ESTÁ EN VERSION MOBILE 2 COLUMNAS, EN DESKTOP 3 Y SI ES WIDE 4 -->
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
                                 <div class="image-container">
                                     <img src="../img/babucha.webp" alt="babucha" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
                         <div class="items-bottom">
                             <p class="items-titulo">Babucha</p>
                             <div class="items-precio">$ 16500 ARS</div>
@@ -129,44 +131,26 @@
                         <div class="items-bottom flexear">
                             <button type="button" class="btn btn-primary btn-agregar-carrito" data-bs-toggle="modal"
                                 data-bs-target="#pagosModal">Agregar al carrito</button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="pagosModal" tabindex="-1" aria-labelledby="pagosModalLabel">
-                                <div class="modal-dialog modal-dialog-mio modal-dialog-centered">
-                                    <div class="modal-content modal-content-mio">
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <span>Los pagos no han sido habilitados todavía</span>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary btn-mio"
-                                                data-bs-dismiss="modal">Cerrar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
 
 
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
 
                                 <div class="image-container">
                                     <img src="../img/jeans.webp" alt="jeans" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
 
 
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
                         <div class="items-bottom">
                             <p class="items-titulo">Jeans</p>
                             <div class="items-precio">$ 15500 ARS</div>
@@ -178,19 +162,20 @@
                     </div>
 
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
 
                                 <div class="image-container">
                                     <img src="../img/joggers.webp" alt="joggers" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
 
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
                         <div class="items-bottom">
                             <p class="items-titulo">Joggers</p>
                             <div class="items-precio">$ 15500 ARS</div>
@@ -203,19 +188,20 @@
 
 
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
 
                                 <div class="image-container">
                                     <img src="../img/sweater.webp" alt="sweater" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
 
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
 
                         <div class="items-bottom">
                             <p class="items-titulo">Sweater</p>
@@ -229,21 +215,22 @@
 
 
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
 
                                 <div class="image-container">
                                     <img src="../img/buzo.webp" alt="buzo" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
 
 
 
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
                         <div class="items-bottom">
                             <p class="items-titulo">Buzo</p>
                             <div class="items-precio">$ 15500 ARS</div>
@@ -256,19 +243,20 @@
 
 
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
 
                                 <div class="image-container">
                                     <img src="../img/campera.webp" alt="campera" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
 
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
                         <div class="items-bottom">
                             <p class="items-titulo">Campera</p>
                             <div class="items-precio">$ 20500 ARS</div>
@@ -281,19 +269,20 @@
 
 
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
 
                                 <div class="image-container">
                                     <img src="../img/buzo2.webp" alt="canguro" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
 
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
                         <div class="items-bottom">
                             <p class="items-titulo">Canguro</p>
                             <div class="items-precio">$ 15500 ARS</div>
@@ -305,19 +294,20 @@
                     </div>
 
                     <div class="col-6 col-xl-3 col-lg-4">
-                        <a href="" class="items-detalles-link">
+                        <div class="items-detalles-link">
                             <figure>
 
 
                                 <div class="image-container">
                                     <img src="../img/musculosa.webp" alt="musculosa" />
-                                    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                                    <div class="mask"></div>
                                 </div>
                                 <figcaption class="ocultar-mobile">
-                                    <span class="btn-detalles">Ver detalles</span>
+                                    <button class="btn-detalles" data-bs-toggle="modal"
+                                        data-bs-target="#detallesModal">Ver detalles</button>
                                 </figcaption>
                             </figure>
-                        </a>
+                        </div>
                         <div class="items-bottom">
                             <p class="items-titulo">Musculosa</p>
                             <div class="items-precio">$ 10500 ARS</div>
@@ -327,15 +317,20 @@
                             </div>
                         </div>
                     </div>
+                    <!-- FINAL DE COLUMNAS PARA LAS FOTOS DE LA TIENDA -->
 
                 </div>
             </div>
         </section>
     </div>
+
+    <!-- AGREGO UN ENLACE PARA IR AL INDEX, QUE QUEDE EN STICKY -->
+
     <div class="contenedor__back-btn">
         <a href="../index.html"><i class="fa fa-angle-double-left back-btn"></i></a>
     </div>
     </section>
+
     <!-- SECCION DEL FOOTER, DONDE UBICAMOS REDES SOCIALES, AGREGAR ENLACES MAS ADELANTE -->
     <section class="footer_style">
         <footer>
@@ -346,6 +341,44 @@
             <a href="https://www.instagram.com/jifstylestore/" target="_blank" class="fa fa-instagram"></a>
         </footer>
     </section>
+
+
+    <!-- MODALS -->
+
+    <!-- MODAL PAGOS -->
+    <div class="modal fade" id="pagosModal" tabindex="-1" aria-labelledby="pagosModalLabel">
+        <div class="modal-dialog modal-dialog-mio modal-dialog-centered">
+            <div class="modal-content modal-content-mio">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>Los pagos no han sido habilitados todavía</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-mio" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DETALLES -->
+    <div class="modal fade" id="detallesModal" tabindex="-1" aria-labelledby="detallesModalLabel">
+        <div class="modal-dialog modal-dialog-mio modal-dialog-centered">
+            <div class="modal-content modal-content-mio">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>Acá direccionaría a una html del producto con stock, talles, materiales, colores, etc</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-mio" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

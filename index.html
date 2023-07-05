@@ -65,7 +65,7 @@
             </a>
 
             <!-- PANEL DE USUARIO, CARRITO, REGISTRAR NUEVO USUARIO O LOGUEARSE -->
-            <div class="vr ocultar-mobile" style="align-self: center;"></div>
+            <div class="vr ocultar-mobile vr-mio"></div>
             <div class="header__nav-user">
                 <a href="./pages/cart.html" class="carrito-text ">
                     <img src="./img/carrito.webp" alt="carrito de compras" class="imagen-carrito" />
@@ -187,29 +187,11 @@
         <div class="banner-div no-selection ocultar-mobile">
             <div class="top-text">JIF STYLE</div>
             <h2 class="fuente-copada texto-xxl">No sabés tu talle?</h2>
-            <p style="color:darkred">Utilizá nuestra guía de talles para saber cual te corresponde.</p>
+            <p>Utilizá nuestra guía de talles para saber cual te corresponde.</p>
             <!-- AGREGAMOS BOTON -->
             <button type="button" class="btn btn-primary btn-mio" data-bs-toggle="modal" data-bs-target="#talleModal">
                 Guía de talles
             </button>
-            <!-- Modal -->
-            <div class="modal fade" id="talleModal" tabindex="-1" aria-labelledby="talleModalLabel">
-                <div class="modal-dialog modal-dialog-mio modal-dialog-centered">
-                    <div class="modal-content modal-content-guia">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="talleModalLabel">Guía de talles</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img class="modal-img" src="./img/talles-mobile.webp" alt="talles de ropa">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary btn-mio"
-                                data-bs-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -230,11 +212,13 @@
     <section class="newsletter-section">
         <div class="caja-newsletter no-selection">
             <p class="top-text">Suscribite al newsletter</p>
-            <h1 class="fuente-copada texto-xxl"><span>Enterate de nuevos ingresos, promos y descuentos</span></h1>
+            <h1 class="fuente-copada texto-xxl"><span>Enterate de nuevas promos y descuentos</span></h1>
             <div class="sobre-icon">
                 <input type="text" class="news-suscribir" placeholder="Ingresá tu email" />
-                <input type="submit" value="Suscribirme" class="botones-rojos suscribir-button" />
+                <input type="submit" value="Suscribirme" data-bs-toggle="modal" data-bs-target="#suscribirModal"
+                    class="botones-rojos suscribir-button" />
             </div>
+            <br>
             <label class="fuente-copada">
                 <span class="suscribite">Registrá tu email para recibir las ultimas novedades</span>
             </label>
@@ -253,6 +237,46 @@
             <a href="https://www.instagram.com/jifstylestore/" target="_blank" class="fa fa-instagram"></a>
         </footer>
     </section>
+
+
+    <!-- MODALS -->
+    <!-- MODAL TALLE -->
+    <div class="modal fade" id="talleModal" tabindex="-1" aria-labelledby="talleModalLabel">
+        <div class="modal-dialog modal-dialog-mio modal-dialog-centered">
+            <div class="modal-content modal-content-guia">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="talleModalLabel">Guía de talles</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="modal-img" src="./img/talles-mobile.webp" alt="talles de ropa">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-mio" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL SUSCRIPCIÓN -->
+    <div class="modal fade" id="suscribirModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-mio modal-dialog-centered texto-lg">
+            <div class="modal-content modal-content-mio">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>Gracias por suscribirte!</span>
+                    <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-mio" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

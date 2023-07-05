@@ -60,7 +60,7 @@
 
     .top-text {
         letter-spacing: 0px;
-        font-size: 0.75rem;
+        font-size: 0.9rem;
     }
 
     .newsletter-section {
@@ -91,6 +91,32 @@
         width: 2rem;
         text-align: center;
         padding: 0.7rem 0.8rem 0 0.8rem;
+    }
+
+    .btn-dropdown-mio {
+        color: $color_blanco;
+        background-color: $color_negro;
+        height: auto;
+        text-transform: uppercase;
+        border-radius: 0.375rem;
+        font-size: 12px;
+        text-decoration: none;
+        margin: 0 0.8rem;
+        width: -webkit-fill-available;
+
+        &:hover {
+            color: $color_blanco;
+            background-color: $color_negro;
+            border-color: $color_transparent;
+        }
+
+        &.active,
+        &.show,
+        &:first-child:active {
+            color: $color_blanco;
+            background-color: $color_negro;
+            border-color: $color_transparent;
+        }
     }
 
     .header__nav-menu {
@@ -130,6 +156,19 @@
                 transition: 0.3s;
                 background-color: $color_transparent !important;
                 border-radius: 0;
+            }
+        }
+    }
+
+
+    .dropdown-menu {
+
+        a {
+            color: $color_negro;
+
+            &:hover {
+                color: $color_blanco;
+                background-color: $color_brown;
             }
         }
     }
@@ -215,7 +254,7 @@
         padding: 0;
         max-width: 100%;
 
-        a {
+        div {
             img {
                 max-height: 15rem;
             }
@@ -258,7 +297,7 @@
     }
 
     .contenedor__back-btn {
-        margin-left: 0.1rem;
+        left: 0.1rem;
     }
 
 

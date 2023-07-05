@@ -98,7 +98,7 @@ footer .fa {
 .footer_style {
   background-color: lightsteelblue;
   border-top: 1px solid #ebebeb;
-  padding: 10px 0 10px 0;
+  padding: 8px 0 8px 0;
   margin-top: auto;
 }
 
@@ -147,32 +147,6 @@ header {
   justify-content: flex-end;
   align-items: center;
   display: flex;
-}
-
-.form-contacto {
-  color: #6c6c6c;
-  background-color: rgba(219, 219, 219, 0.1);
-  background-position: 9px 57%;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  border-style: solid;
-  border-color: #ebebeb;
-  padding-left: 4px;
-  font-size: 16px;
-  line-height: 23px;
-  width: 100%;
-  resize: none;
-}
-
-.contacto__contenedor-form {
-  width: -webkit-fill-available;
-  padding-left: 2rem;
-  text-align: justify;
-  padding-right: 5rem;
-}
-.contacto__contenedor-form label {
-  margin-top: 1rem;
-  margin-bottom: 0;
 }
 
 .texto-xs {
@@ -304,6 +278,13 @@ header {
   margin-top: 3%;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
+.section-talle p {
+  color: brown;
+}
+
+.vr-mio {
+  align-self: center;
+}
 
 .top-text {
   color: indianred;
@@ -319,6 +300,9 @@ header {
   margin: 0 auto 0 auto;
   padding: 0 1.4% 0 1.4%;
   width: 100%;
+}
+.caja-newsletter p {
+  margin: 0 0 1rem 0;
 }
 
 .caja-coleccion {
@@ -404,6 +388,7 @@ header {
   font-size: 12px;
   text-decoration: none;
   padding: 0.75rem 0.375rem;
+  border: 0;
 }
 .botones-rojos:hover {
   color: white;
@@ -513,10 +498,14 @@ header {
 }
 
 .contenedor__back-btn {
-  position: sticky;
-  top: 0;
-  bottom: 5%;
-  margin-left: 1rem;
+  position: fixed;
+  bottom: 6.5%;
+  left: 1rem;
+}
+
+.enviarButton {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .title-container .title {
@@ -540,7 +529,7 @@ header {
 
 .contenedor-contacto {
   padding: 0 5% 0 5%;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .banner-encabezado {
@@ -564,6 +553,7 @@ header {
 .quienes-somos {
   font-size: 32px;
   padding: 0 10% 0 10%;
+  margin: 0 0 1rem 0;
 }
 .quienes-somos p {
   font-size: 1.1rem;
@@ -634,6 +624,7 @@ figcaption {
 }
 
 .mask {
+  background-color: rgba(0, 0, 0, 0.4) !important;
   display: none;
 }
 
@@ -676,6 +667,7 @@ figcaption {
   padding: 7px 0;
   margin: 0 auto;
   transition: all 300ms ease;
+  border: 0;
 }
 
 .items-bottom {
@@ -710,6 +702,37 @@ figcaption {
   border-color: #ebebeb;
   background-color: rgba(219, 219, 219, 0.1);
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.425);
+}
+
+.form-contacto {
+  color: #6c6c6c;
+  background-color: rgba(219, 219, 219, 0.1);
+  background-position: 9px 57%;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border-style: solid;
+  border-color: #ebebeb;
+  padding-left: 4px;
+  font-size: 16px;
+  line-height: 23px;
+  width: 100%;
+  resize: none;
+}
+
+.contacto__contenedor-form {
+  width: -webkit-fill-available;
+  padding-left: 2rem;
+  text-align: justify;
+  padding-right: 5rem;
+}
+.contacto__contenedor-form label {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.contacto__contenedor-mapa {
+  width: 100%;
+  text-align: justify;
 }
 
 @media (max-width: 576px) {
@@ -760,7 +783,7 @@ figcaption {
   }
   .top-text {
     letter-spacing: 0px;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
   .newsletter-section {
     padding-top: 0px;
@@ -786,6 +809,27 @@ figcaption {
     width: 2rem;
     text-align: center;
     padding: 0.7rem 0.8rem 0 0.8rem;
+  }
+  .btn-dropdown-mio {
+    color: white;
+    background-color: black;
+    height: auto;
+    text-transform: uppercase;
+    border-radius: 0.375rem;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 0.8rem;
+    width: -webkit-fill-available;
+  }
+  .btn-dropdown-mio:hover {
+    color: white;
+    background-color: black;
+    border-color: transparent;
+  }
+  .btn-dropdown-mio.active, .btn-dropdown-mio.show, .btn-dropdown-mio:first-child:active {
+    color: white;
+    background-color: black;
+    border-color: transparent;
   }
   .header__nav-menu {
     position: fixed;
@@ -821,6 +865,13 @@ figcaption {
     transition: 0.3s;
     background-color: transparent !important;
     border-radius: 0;
+  }
+  .dropdown-menu a {
+    color: black;
+  }
+  .dropdown-menu a:hover {
+    color: white;
+    background-color: brown;
   }
   #header__check {
     display: none;
@@ -884,7 +935,7 @@ figcaption {
     padding: 0;
     max-width: 100%;
   }
-  .contenedor-tienda a img {
+  .contenedor-tienda div img {
     max-height: 15rem;
   }
   .items-bottom {
@@ -914,7 +965,7 @@ figcaption {
     font-size: large !important;
   }
   .contenedor__back-btn {
-    margin-left: 0.1rem;
+    left: 0.1rem;
   }
   .fa-mio {
     margin: 0 1rem 0 0;
