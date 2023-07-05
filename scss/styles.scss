@@ -14,7 +14,7 @@
         border: 1px solid $color_transparent;
         --bs-modal-header-border-color: $color_transparent;
         --bs-modal-footer-border-color: $color_transparent;
-        background-color: #ffffffd8;
+        background-color: #ffffffea;
     }
 
     .modal-content-guia {
@@ -24,6 +24,17 @@
 
         .modal-img {
             width: -webkit-fill-available;
+        }
+
+    }
+}
+
+.dropdown-menu {
+    li {
+        a {
+            &:hover {
+                background-color: aqua;
+            }
         }
 
     }
@@ -100,7 +111,7 @@
 
     .imagen-carrito {
         margin-right: 5px;
-        width: 20px;
+        width: map-get($map: $texto, $key: 'md');
         opacity: 65%;
     }
 
@@ -179,6 +190,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 94%;
+    text-align: center;
     @extend %flexy-center;
 
     img {
@@ -266,9 +278,8 @@
 .items-precio {
     color: $color_negro;
     margin-top: 0;
-    font-size: 14px;
+    font-size: map-get($map: $texto, $key: 'xs');
     font-weight: 600;
-    line-height: 24px;
 }
 
 .banner-div {
@@ -359,7 +370,7 @@
 .title-container {
     .title {
         padding: 0px 25px;
-        font-size: 20px;
+        font-size: map-get($map: $texto, $key: 'md');
         color: $color_indianred;
         text-align: center;
         letter-spacing: 2px;
@@ -422,6 +433,10 @@
     font-family: $font-arsenal;
 }
 
+.centrar-texto {
+    text-align: center;
+}
+
 .mobile {
     display: none;
 }
@@ -447,11 +462,7 @@ nav {
     text-transform: uppercase;
     font-size: 0.7rem;
     @extend %flexy-center;
-
-    .minibar-top-text {
-        display: inline-block;
-        align-self: center;
-    }
+    align-items: center;
 }
 
 .pic-zoom {
@@ -492,7 +503,7 @@ figcaption {
     border: 5px solid $color_blanco;
     transition: border .15s ease-in-out;
     border-radius: 4px;
-    font-size: 24px;
+    font-size: map-get($map: $texto, $key: 'lg');
 
     &:hover {
         border: 5px solid $color_brown;
@@ -575,7 +586,7 @@ figcaption {
     background-color: $background-color_6;
     background-position: 9px 57%;
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: map-get($map: $texto, $key: 'md');
     border-style: solid;
     border-color: $border-color_3;
     padding-left: 4px;

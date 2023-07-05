@@ -1,3 +1,23 @@
+.texto-xs {
+  font-size: 14.5px;
+}
+
+.texto-md {
+  font-size: 20px;
+}
+
+.texto-lg {
+  font-size: 24px;
+}
+
+.texto-xl {
+  font-size: 40px;
+}
+
+.texto-xxl {
+  font-size: 44px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -8,7 +28,7 @@
 body {
   color: black;
   background-color: white;
-  font-size: 14px;
+  font-size: 14.5px;
   font-family: Lato, sans-serif;
   display: flex;
   flex-direction: column;
@@ -45,7 +65,7 @@ p {
   margin-bottom: 0rem;
   color: #6c6c6c;
   text-align: justify;
-  font-size: 14px;
+  font-size: 14.5px;
 }
 
 div nav {
@@ -69,6 +89,26 @@ li a:hover {
   filter: drop-shadow(2px 4px 6px black);
 }
 
+.texto-xs {
+  font-size: 14.5px;
+}
+
+.texto-md {
+  font-size: 20px;
+}
+
+.texto-lg {
+  font-size: 24px;
+}
+
+.texto-xl {
+  font-size: 40px;
+}
+
+.texto-xxl {
+  font-size: 44px;
+}
+
 footer a {
   text-decoration: none;
   font-size: 22px;
@@ -90,7 +130,7 @@ footer a:hover {
 }
 footer .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14.5px FontAwesome;
   font-size: 22px;
   line-height: 32px;
 }
@@ -186,7 +226,7 @@ header {
   border: 1px solid transparent;
   --bs-modal-header-border-color: $color_transparent;
   --bs-modal-footer-border-color: $color_transparent;
-  background-color: rgba(255, 255, 255, 0.8470588235);
+  background-color: rgba(255, 255, 255, 0.9176470588);
 }
 .modal-dialog-mio .modal-content-guia {
   border: 3px solid brown;
@@ -195,6 +235,10 @@ header {
 }
 .modal-dialog-mio .modal-content-guia .modal-img {
   width: -webkit-fill-available;
+}
+
+.dropdown-menu li a:hover {
+  background-color: aqua;
 }
 
 .btn-mio {
@@ -333,6 +377,7 @@ header {
   margin: 0 auto;
   width: 100%;
   max-width: 94%;
+  text-align: center;
 }
 .contenedor-tienda img {
   width: auto;
@@ -413,9 +458,8 @@ header {
 .items-precio {
   color: black;
   margin-top: 0;
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: 600;
-  line-height: 24px;
 }
 
 .banner-div {
@@ -569,6 +613,10 @@ header {
   font-family: "Arsenal", sans-serif;
 }
 
+.centrar-texto {
+  text-align: center;
+}
+
 .mobile {
   display: none;
 }
@@ -590,10 +638,7 @@ nav label {
   height: 21px;
   text-transform: uppercase;
   font-size: 0.7rem;
-}
-.minibar-top .minibar-top-text {
-  display: inline-block;
-  align-self: center;
+  align-items: center;
 }
 
 .pic-zoom {
@@ -891,7 +936,6 @@ figcaption {
   }
   .flyer {
     text-align: center;
-    margin: 0 0 -1rem 0;
     font-size: 1.3rem;
     background-color: burlywood;
     font-weight: bold;
@@ -998,7 +1042,6 @@ figcaption {
   }
   .mobile-btn-container {
     position: relative;
-    margin: 1rem 0 1rem 0;
   }
   .mobile-btn-container a {
     position: absolute;

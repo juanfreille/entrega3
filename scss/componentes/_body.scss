@@ -1,3 +1,5 @@
+@import '../base/maps';
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -8,7 +10,7 @@
 body {
     color: $color_negro;
     background-color: $color_blanco;
-    font-size: 14px;
+    font-size: map-get($map: $texto, $key: 'xs');
     font-family: $font-lato;
     display: flex;
     flex-direction: column;
@@ -21,14 +23,14 @@ h1 {
     font-weight: bold;
     margin-top: 0px;
     font-size: 38px;
-    line-height: 44px;
+    line-height: map-get($map: $texto, $key: 'xxl');
     font-size: 2em;
 }
 
 h2 {
     margin-bottom: 10px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: map-get($map: $texto, $key: 'md');
     font-size: 32px;
     line-height: 36px;
     text-align: center;
@@ -45,7 +47,7 @@ p {
     margin-bottom: 0rem;
     color: $color_texto-parrafos;
     text-align: justify;
-    font-size: 14px;
+    font-size: map-get($map: $texto, $key: 'xs');
 }
 
 div {
