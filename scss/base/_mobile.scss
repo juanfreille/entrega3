@@ -168,12 +168,16 @@
 
     .news-suscribir {
         width: 90%;
+        margin-bottom: 8px;
     }
 
     .sobre-icon {
+        padding: 0;
+        margin-bottom: 5px;
+
         &:before {
-            font-size: 45%;
-            padding: 0.8rem 0 0 0.8rem;
+            font-size: 175%;
+            padding: 0.4rem 0 0 0.5rem;
         }
     }
 
