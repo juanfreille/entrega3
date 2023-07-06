@@ -35,6 +35,13 @@ img {
     }
 }
 
+.carousel-item {
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
 .dropdown-menu {
     li {
         a {

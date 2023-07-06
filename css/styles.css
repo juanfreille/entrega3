@@ -33,6 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -241,6 +242,11 @@ img {
 }
 .modal-dialog-mio .modal-content-guia .modal-img {
   width: -webkit-fill-available;
+}
+
+.carousel-item img {
+  height: auto;
+  max-width: 100%;
 }
 
 .dropdown-menu li a:hover {
