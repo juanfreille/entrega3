@@ -228,6 +228,7 @@
     }
 
     #header__logo-mobile {
+        margin: 0% auto;
         display: block;
     }
 
@@ -235,12 +236,13 @@
         display: contents;
     }
 
-    .modal-dialog-mio {
-        max-width: none;
+    .header__nav-user {
+        padding-left: 0px;
     }
 
-    .imagen-carrito {
-        width: 25px;
+
+    .modal-dialog-mio {
+        max-width: none;
     }
 
     .encabezado-grande {
@@ -270,6 +272,9 @@
         padding: 0.1em 1.25em;
     }
 
+    .imagen-carrito {
+        margin: -3px 5px 0 0;
+    }
 
     .contenedor-contacto {
         flex-direction: column;

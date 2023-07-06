@@ -149,6 +149,8 @@ header {
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
   padding: 0 1rem;
   top: 0;
+  height: 53px;
+  width: 100%;
 }
 
 #header__logo-pc {
@@ -312,8 +314,10 @@ img {
 }
 .carrito-text .imagen-carrito {
   margin-right: 5px;
-  width: 20px;
+  width: 25px;
+  height: 25px;
   opacity: 65%;
+  margin: -3px 5px 0 0;
 }
 .carrito-text .carrito-nav {
   color: #6c6c6c;
@@ -966,16 +970,17 @@ figcaption {
     display: none;
   }
   #header__logo-mobile {
+    margin: 0% auto;
     display: block;
   }
   .header__links {
     display: contents;
   }
+  .header__nav-user {
+    padding-left: 0px;
+  }
   .modal-dialog-mio {
     max-width: none;
-  }
-  .imagen-carrito {
-    width: 25px;
   }
   .encabezado-grande {
     font-size: 28px;
@@ -995,6 +1000,9 @@ figcaption {
   }
   .btn-agregar-carrito {
     padding: 0.1em 1.25em;
+  }
+  .imagen-carrito {
+    margin: -3px 5px 0 0;
   }
   .contenedor-contacto {
     flex-direction: column;

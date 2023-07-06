@@ -11,8 +11,8 @@
 img {
     max-width: 100%;
     height: auto;
-  }
-  
+}
+
 .modal-dialog-mio {
     max-width: fit-content;
 
@@ -100,7 +100,7 @@ img {
     height: auto;
     max-width: 100%;
     background-size: 100% 100%;
-  }
+}
 
 .coleccion-section {
     padding-top: 10px;
@@ -119,8 +119,10 @@ img {
 
     .imagen-carrito {
         margin-right: 5px;
-        width: map-get($map: $texto, $key: 'md');
+        width: 25px;
+        height: 25px;
         opacity: 65%;
+        margin: -3px 5px 0 0;
     }
 
     .carrito-nav {
