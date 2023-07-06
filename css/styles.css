@@ -33,7 +33,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -796,6 +795,9 @@ figcaption {
     padding: 0 2px;
     align-items: center;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .quienes-somos br {
     content: "";
     display: block;
@@ -862,7 +864,7 @@ figcaption {
     font-size: 1.5rem;
     color: #6c6c6c;
     cursor: pointer;
-    width: 2rem;
+    width: 2.5rem;
     text-align: center;
     padding: 0.7rem 0.8rem 0 0.8rem;
   }
