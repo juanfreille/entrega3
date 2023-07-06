@@ -17,28 +17,22 @@ img {
     max-width: fit-content;
 
     .modal-content-mio {
-        border: 1px solid $color_transparent;
-        --bs-modal-header-border-color: $color_transparent;
-        --bs-modal-footer-border-color: $color_transparent;
+        border: 1px solid transparent;
+        --bs-modal-header-border-color: transparent;
+        --bs-modal-footer-border-color: transparentt;
         background-color: #ffffffea;
     }
 
     .modal-content-guia {
         border: 3px solid $color_brown;
-        --bs-modal-header-border-color: $color_transparent;
-        --bs-modal-footer-border-color: $color_transparent;
+        --bs-modal-header-border-color: transparent;
+        --bs-modal-footer-border-color: transparent;
 
         .modal-img {
             width: -webkit-fill-available;
+            width: -moz-available;
         }
 
-    }
-}
-
-.carousel-item {
-    img {
-        height: auto;
-        max-width: 100%;
     }
 }
 

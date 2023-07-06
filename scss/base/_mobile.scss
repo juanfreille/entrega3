@@ -6,7 +6,7 @@
 
     ::-webkit-scrollbar {
         display: none;
-    }    
+    }
 
     .quienes-somos {
         br {
@@ -206,6 +206,8 @@
         font-size: 1.3rem;
         background-color: $color_burlywood;
         font-weight: bold;
+        margin: 0px;
+        line-height: 1.5;
     }
 
     .news-suscribir {
@@ -215,7 +217,7 @@
 
     .sobre-icon {
         padding: 0;
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
 
         &:before {
             font-size: 175%;
@@ -329,7 +331,13 @@
         margin: 0;
         padding: 0;
 
-        h1 {
+        p {
+            margin: 0;
+        }
+
+        h2 {
+            margin: 0;
+
             .suscribite {
                 display: block;
             }
@@ -337,6 +345,10 @@
             span {
                 display: none;
             }
+        }
+
+        br {
+            display: none;
         }
     }
 

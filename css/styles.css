@@ -231,22 +231,18 @@ img {
 }
 .modal-dialog-mio .modal-content-mio {
   border: 1px solid transparent;
-  --bs-modal-header-border-color: $color_transparent;
-  --bs-modal-footer-border-color: $color_transparent;
+  --bs-modal-header-border-color: transparent;
+  --bs-modal-footer-border-color: transparentt;
   background-color: rgba(255, 255, 255, 0.9176470588);
 }
 .modal-dialog-mio .modal-content-guia {
   border: 3px solid brown;
-  --bs-modal-header-border-color: $color_transparent;
-  --bs-modal-footer-border-color: $color_transparent;
+  --bs-modal-header-border-color: transparent;
+  --bs-modal-footer-border-color: transparent;
 }
 .modal-dialog-mio .modal-content-guia .modal-img {
   width: -webkit-fill-available;
-}
-
-.carousel-item img {
-  height: auto;
-  max-width: 100%;
+  width: -moz-available;
 }
 
 .dropdown-menu li a:hover {
@@ -958,6 +954,8 @@ figcaption {
     font-size: 1.3rem;
     background-color: burlywood;
     font-weight: bold;
+    margin: 0px;
+    line-height: 1.5;
   }
   .news-suscribir {
     width: 90%;
@@ -965,7 +963,6 @@ figcaption {
   }
   .sobre-icon {
     padding: 0;
-    margin-bottom: 5px;
   }
   .sobre-icon:before {
     font-size: 175%;
@@ -1051,10 +1048,19 @@ figcaption {
     margin: 0;
     padding: 0;
   }
-  .caja-newsletter h1 .suscribite {
+  .caja-newsletter p {
+    margin: 0;
+  }
+  .caja-newsletter h2 {
+    margin: 0;
+  }
+  .caja-newsletter h2 .suscribite {
     display: block;
   }
-  .caja-newsletter h1 span {
+  .caja-newsletter h2 span {
+    display: none;
+  }
+  .caja-newsletter br {
     display: none;
   }
   .suscribir-button {
