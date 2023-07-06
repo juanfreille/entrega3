@@ -7,6 +7,12 @@
 @import './base/mixin';
 @import './base/extend';
 
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
 .modal-dialog-mio {
     max-width: fit-content;
 
