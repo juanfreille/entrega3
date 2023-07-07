@@ -195,7 +195,7 @@ img {
     color: $color_texto-parrafos;
     background-color: $color_bg_input;
     border-style: solid;
-    border-color: $border-color_3;
+    border-color: $color_borde;
     padding: 0 0 0 40px;
     font-size: 15px;
     display: inline-block;
@@ -203,7 +203,7 @@ img {
 
 .sobre-icon {
     text-align: center;
-    font-family: $font-lato;
+    font-family: $font-body;
     padding: 0 20%;
 
 
@@ -359,7 +359,7 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     margin: 0;
-    border-color: $border-color_4;
+    border-color: $color_borde;
     background-color: $color_blanco;
 }
 
@@ -389,7 +389,7 @@ img {
     font-family: $font-asap;
     border: solid;
     padding: 10px;
-    background-color: $background-color_8;
+    background-color: $color_bg_encabezado;
     display: inline;
 }
 
@@ -568,7 +568,7 @@ figcaption {
     background-repeat: no-repeat;
     background-size: map-get($map: $texto, $key: 'md');
     border-style: solid;
-    border-color: $border-color_3;
+    border-color: $color_borde;
     padding-left: 4px;
     font-size: 16px;
     line-height: 23px;

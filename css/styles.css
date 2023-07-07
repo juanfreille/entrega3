@@ -33,7 +33,7 @@ body {
   color: black;
   background-color: white;
   font-size: 14.5px;
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -417,7 +417,7 @@ img {
 
 .sobre-icon {
   text-align: center;
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   padding: 0 20%;
 }
 .sobre-icon:before {
@@ -582,7 +582,7 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
-  border-color: #c4d4c4;
+  border-color: #ebebeb;
   background-color: white;
 }
 

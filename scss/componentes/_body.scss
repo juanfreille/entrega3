@@ -11,7 +11,7 @@ body {
     color: $color_negro;
     background-color: $color_blanco;
     font-size: map-get($map: $texto, $key: 'xs');
-    font-family: $font-lato;
+    font-family: $font-body;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
