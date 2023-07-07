@@ -324,7 +324,6 @@ img {
   color: #6c6c6c;
   letter-spacing: 1px;
   text-transform: uppercase;
-  line-height: 22px;
 }
 
 .section-talle {
@@ -521,7 +520,6 @@ img {
 .btn-mio-styless {
   border: 0;
   font: inherit;
-  line-height: normal;
   overflow: visible;
   padding: 0 4px;
 }
@@ -565,7 +563,7 @@ img {
   flex-direction: row-reverse;
 }
 
-.title-container .title {
+.title {
   padding: 0px 25px;
   font-size: 20px;
   color: indianred;
@@ -806,6 +804,10 @@ figcaption {
     content: "";
     display: block;
     margin: 1rem 0;
+  }
+  .title {
+    line-height: 36px;
+    font-size: 16px;
   }
   p {
     margin-bottom: 0px;

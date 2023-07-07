@@ -65,11 +65,9 @@
     </header>
 
     <div class="banner-encabezado centrar-texto">
-        <h2 class="encabezado-grande texto-xxl">locales</h2>
+        <h1 class="encabezado-grande texto-xxl">locales</h1>
     </div>
-    <div class="title-container">
-        <h1 class="title fuente-copada">Contacto</h1>
-    </div>
+    <h2 class="title fuente-copada">Contacto</h2>
 
     <main class="contenedor-contacto">
         <div class="contacto__contenedor-mapa">
@@ -103,30 +101,29 @@
                 width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
         <div class="contacto__contenedor-form">
-            <form action="documento.php" method="get">
+            <form action="documento.php" method="get" enctype="text/plain">
                 <label for="nombre" name="nombre">Nombre:</label>
-                <input type="text" id="nombre" required class="form-contacto">
+                <input type="text" name="nombre" id="nombre" required class="form-contacto">
 
                 <label for="apellido" name="apellido">Apellido:</label>
-                <input type="text" id="apellido" required class="form-contacto">
+                <input type="text" id="apellido" name="apellido" required class="form-contacto">
 
                 <label for="email" name="email">E-mail:</label>
-                <input type="email" id="email" required class="form-contacto">
+                <input type="email" id="email" name="email" required class="form-contacto">
 
                 <label for="telefono" name="telefono">Teléfono (Opcional):</label>
-                <input type="number" id="telefono" required class="form-contacto">
+                <input type="number" id="telefono" name="telefono" required class="form-contacto">
 
                 <label for="mensaje" name="mensaje">Mensaje:</label>
-                <textarea class="form-contacto" required id="mensaje" rows="8"></textarea>
-                <input type="submit" value="Submit">
-
+                <textarea class="form-contacto" name="mensaje" required id="mensaje" rows="8"></textarea>
                 <div class="enviarButton">
-                    <a href="#enviarModal" data-bs-toggle="modal" data-bs-target="#enviarModal"
-                        class="botones-rojos">enviar</a>
+                    <input type="submit" value="enviar" class="botones-rojos">
                 </div>
             </form>
         </div>
+
     </main>
 
     <!-- AGREGO UN ENLACE PARA IR AL INDEX, QUE QUEDE FIXED -->
@@ -137,9 +134,11 @@
     <footer class="footer_style">
         <a href="https://www.facebook.com/jifstylestore/" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
         <a href="https://twitter.com/jifstylestore" target="_blank" class="fa fa-twitter" aria-hidden="true"></a>
-        <a href="https://ar.linkedin.com/company/jifstyle" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
+        <a href="https://ar.linkedin.com/company/jifstyle" target="_blank" class="fa fa-linkedin"
+            aria-hidden="true"></a>
         <a href="https://www.youtube.com/channel" target="_blank" class="fa fa-youtube" aria-hidden="true"></a>
-        <a href="https://www.instagram.com/jifstylestore/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+        <a href="https://www.instagram.com/jifstylestore/" target="_blank" class="fa fa-instagram"
+            aria-hidden="true"></a>
     </footer>
 
     <!-- MODAL ENVIAR -->

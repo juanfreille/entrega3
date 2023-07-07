@@ -16,6 +16,11 @@
         }
     }
 
+    .title {
+        line-height: 36px;
+        font-size: map-get($map: $texto, $key: 'xs+');
+    }
+
     p {
         margin-bottom: 0px;
         line-height: 24px;
@@ -361,7 +366,7 @@
     .mobile-banner-img {
         width: -webkit-fill-available;
         width: -moz-available;
-        }
+    }
 
     .mobile-btn-container {
         position: relative;

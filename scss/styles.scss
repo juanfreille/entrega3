@@ -130,7 +130,6 @@ img {
         color: $color_texto-parrafos;
         letter-spacing: 1px;
         text-transform: uppercase;
-        line-height: 22px;
     }
 }
 
@@ -329,7 +328,6 @@ img {
 .btn-mio-styless {
     border: 0;
     font: inherit;
-    line-height: normal;
     overflow: visible;
     padding: 0 4px;
 }
@@ -379,19 +377,17 @@ img {
     flex-direction: row-reverse;
 }
 
-.title-container {
-    .title {
-        padding: 0px 25px;
-        font-size: map-get($map: $texto, $key: 'md');
-        color: $color_indianred;
-        text-align: center;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        font-weight: bold;
-        margin: 0;
-        border-color: $border-color_4;
-        background-color: $color_blanco;
-    }
+.title {
+    padding: 0px 25px;
+    font-size: map-get($map: $texto, $key: 'md');
+    color: $color_indianred;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    border-color: $border-color_4;
+    background-color: $color_blanco;
 }
 
 .icon-inline {
