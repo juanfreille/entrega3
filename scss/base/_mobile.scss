@@ -18,7 +18,7 @@
 
     .title {
         line-height: 36px;
-        font-size: map-get($map: $texto, $key: 'xs+');
+        font-size: map-get($map: $texto, $key: 'xsplus');
     }
 
     p {

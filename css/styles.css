@@ -2,6 +2,10 @@
   font-size: 14.5px;
 }
 
+.texto-xsplus {
+  font-size: 16px;
+}
+
 .texto-md {
   font-size: 20px;
 }
@@ -93,6 +97,10 @@ li a:hover {
   font-size: 14.5px;
 }
 
+.texto-xsplus {
+  font-size: 16px;
+}
+
 .texto-md {
   font-size: 20px;
 }
@@ -130,7 +138,7 @@ footer a:hover {
 }
 footer .fa {
   display: inline-block;
-  font: normal normal normal 14.5px FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: 22px;
   line-height: 32px;
 }
@@ -195,6 +203,10 @@ header {
   font-size: 14.5px;
 }
 
+.texto-xsplus {
+  font-size: 16px;
+}
+
 .texto-md {
   font-size: 20px;
 }
@@ -243,10 +255,6 @@ img {
 .modal-dialog-mio .modal-content-guia .modal-img {
   width: -webkit-fill-available;
   width: -moz-available;
-}
-
-.dropdown-menu li a:hover {
-  background-color: aqua;
 }
 
 .btn-mio {
@@ -438,6 +446,7 @@ img {
 .botones-rojos {
   color: white;
   background-color: brown;
+  border-color: transparent;
   height: auto;
   text-transform: uppercase;
   border-radius: 0.375rem;
@@ -449,6 +458,7 @@ img {
 .botones-rojos:hover {
   color: white;
   background-color: black;
+  border-color: transparent;
 }
 
 .suscribite {
@@ -712,10 +722,11 @@ figcaption {
 }
 
 .btn-detalles {
-  background: brown;
+  color: white;
+  background-color: brown;
+  border-color: transparent;
   border-radius: 3px;
   display: block;
-  color: #fff;
   top: 35px;
   font-size: 16px;
   position: relative;
@@ -781,10 +792,6 @@ figcaption {
   padding-left: 2rem;
   text-align: justify;
   padding-right: 5rem;
-}
-.contacto__contenedor-form label {
-  margin-top: 1rem;
-  margin-bottom: 0;
 }
 
 .contacto__contenedor-mapa {

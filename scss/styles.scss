@@ -36,34 +36,17 @@ img {
     }
 }
 
-.dropdown-menu {
-    li {
-        a {
-            &:hover {
-                background-color: aqua;
-            }
-        }
-
-    }
-}
-
 .btn-mio {
-    color: $color_blanco;
-    background-color: $color_brown;
-    border-color: $color_transparent;
+    @include color-bg-border($color_brown);
 
     &:hover {
-        color: $color_blanco;
-        background-color: $color_negro;
-        border-color: $color_transparent;
+        @include color-bg-border($color_negro);
     }
 
     &.active,
     &.show,
     &:first-child:active {
-        color: $color_blanco;
-        background-color: $color_negro;
-        border-color: $color_transparent;
+        @include color-bg-border($color_negro);
     }
 
 }
@@ -74,16 +57,12 @@ img {
 
 .btn-check {
     &:checked+.btn-mio {
-        color: $color_blanco;
-        background-color: $color_negro;
-        border-color: $color_transparent;
+        @include color-bg-border($color_negro);
     }
 }
 
 :not(.btn-check)+.btn-mio:active {
-    color: $color_blanco;
-    background-color: $color_negro;
-    border-color: $color_transparent;
+    @include color-bg-border($color_negro);
 }
 
 .no-selection {
@@ -214,7 +193,7 @@ img {
     width: 34%;
     height: 46px;
     color: $color_texto-parrafos;
-    background-color: $background-color_6;
+    background-color: $color_bg_input;
     border-style: solid;
     border-color: $border-color_3;
     padding: 0 0 0 40px;
@@ -253,8 +232,7 @@ img {
 }
 
 .botones-rojos {
-    color: $color_blanco;
-    background-color: $color_brown;
+    @include color-bg-border($color_brown);
     height: auto;
     text-transform: uppercase;
     border-radius: 0.375rem;
@@ -264,8 +242,7 @@ img {
     border: 0;
 
     &:hover {
-        color: $color_blanco;
-        background-color: $color_negro;
+        @include color-bg-border($color_negro);
     }
 }
 
@@ -293,11 +270,11 @@ img {
 }
 
 .banner-div {
-    @include banner (3% 4%);
+    @include banner(3% 4%);
 }
 
 .banner-izq {
-    @include banner (0% 4% 0% 3%);
+    @include banner(0% 4% 0% 3%);
 }
 
 .banner-der {
@@ -346,17 +323,13 @@ img {
     border-color: $color_transparent;
 
     &:hover {
-        color: $color_blanco;
-        background-color: $color_texto-parrafos;
-        border-color: $color_transparent;
+        @include color-bg-border($color_texto-parrafos);
     }
 
     &.active,
     &.show,
     &:first-child:active {
-        color: $color_blanco;
-        background-color: $color_texto-parrafos;
-        border-color: $color_transparent;
+        @include color-bg-border($color_texto-parrafos);
     }
 
 }
@@ -540,10 +513,9 @@ figcaption {
 }
 
 .btn-detalles {
-    background: $color_brown;
+    @include color-bg-border($color_brown);
     border-radius: 3px;
     display: block;
-    color: #fff;
     top: 35px;
     font-size: 16px;
     position: relative;
@@ -575,14 +547,14 @@ figcaption {
 }
 
 .form-control-mio {
-    color: #6c6c6c;
+    color: $color_texto-parrafos;
     background-color: rgba(219, 219, 219, 0.1);
     border-style: solid;
     border-color: #ebebeb;
     font-size: 15px;
 
     &:focus-visible {
-        color: #6c6c6c;
+        color: $color_texto-parrafos;
         border-color: #ebebeb;
         background-color: rgba(219, 219, 219, 0.1);
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.425);
@@ -591,7 +563,7 @@ figcaption {
 
 .form-contacto {
     color: $color_texto-parrafos;
-    background-color: $background-color_6;
+    background-color: $color_bg_input;
     background-position: 9px 57%;
     background-repeat: no-repeat;
     background-size: map-get($map: $texto, $key: 'md');
@@ -610,11 +582,6 @@ figcaption {
     padding-left: 2rem;
     text-align: justify;
     padding-right: 5rem;
-
-    label {
-        margin-top: 1rem;
-        margin-bottom: 0;
-    }
 }
 
 .contacto__contenedor-mapa {

@@ -7,3 +7,10 @@
     text-align: left;
     padding: $banner_padding;
 }
+
+
+@mixin color-bg-border($bg) {
+    color: $color_blanco;
+    background-color: $bg;
+    border-color: $color_transparent;
+}
