@@ -107,6 +107,7 @@
         text-decoration: none;
         margin: 0 0.8rem;
         width: -webkit-fill-available;
+        width: -moz-available;
 
         &:hover {
             color: $color_blanco;
@@ -293,6 +294,7 @@
 
     .contacto__contenedor-form {
         width: -webkit-fill-available;
+        width: -moz-available;
         padding-left: 0;
         text-align: justify;
         padding-right: 0;
@@ -358,7 +360,8 @@
 
     .mobile-banner-img {
         width: -webkit-fill-available;
-    }
+        width: -moz-available;
+        }
 
     .mobile-btn-container {
         position: relative;

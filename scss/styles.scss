@@ -342,6 +342,7 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     width: -webkit-fill-available;
+    width: -moz-available;
     margin-bottom: 2rem;
     font-family: $font-asap;
     border-color: $color_transparent;
@@ -609,6 +610,7 @@ figcaption {
 
 .contacto__contenedor-form {
     width: -webkit-fill-available;
+    width: -moz-available;
     padding-left: 2rem;
     text-align: justify;
     padding-right: 5rem;

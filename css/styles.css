@@ -534,6 +534,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   width: -webkit-fill-available;
+  width: -moz-available;
   margin-bottom: 2rem;
   font-family: "Asap Condensed", sans-serif;
   border-color: transparent;
@@ -778,6 +779,7 @@ figcaption {
 
 .contacto__contenedor-form {
   width: -webkit-fill-available;
+  width: -moz-available;
   padding-left: 2rem;
   text-align: justify;
   padding-right: 5rem;
@@ -880,6 +882,7 @@ figcaption {
     text-decoration: none;
     margin: 0 0.8rem;
     width: -webkit-fill-available;
+    width: -moz-available;
   }
   .btn-dropdown-mio:hover {
     color: white;
@@ -1018,6 +1021,7 @@ figcaption {
   }
   .contacto__contenedor-form {
     width: -webkit-fill-available;
+    width: -moz-available;
     padding-left: 0;
     text-align: justify;
     padding-right: 0;
@@ -1068,6 +1072,7 @@ figcaption {
   }
   .mobile-banner-img {
     width: -webkit-fill-available;
+    width: -moz-available;
   }
   .mobile-btn-container {
     position: relative;
