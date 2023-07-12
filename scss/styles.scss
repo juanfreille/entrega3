@@ -157,13 +157,12 @@ img {
     border-radius: 1rem;
 
     img {
-        transform: scale(1);
         transition: .3s ease-in-out;
         width: auto;
         max-height: 26rem;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(0.95);
         }
 
     }
@@ -191,13 +190,13 @@ img {
 
 .news-suscribir {
     width: 34%;
-    height: 46px;
+    height: 45px;
     color: $color_texto-parrafos;
     background-color: $color_bg_input;
     border-style: solid;
     border-color: $color_borde;
     padding: 0 0 0 40px;
-    font-size: 15px;
+    font-size: 13px;
     display: inline-block;
 }
 
@@ -444,10 +443,6 @@ nav {
     font-size: 0.7rem;
     @extend %flexy-center;
     align-items: center;
-}
-
-.pic-zoom {
-    overflow: hidden;
 }
 
 figure {

@@ -377,13 +377,12 @@ img {
   border-radius: 1rem;
 }
 .caja-coleccion img {
-  transform: scale(1);
   transition: 0.3s ease-in-out;
   width: auto;
   max-height: 26rem;
 }
 .caja-coleccion img:hover {
-  transform: scale(1.1);
+  transform: scale(0.95);
 }
 
 .contenedor img {
@@ -405,13 +404,13 @@ img {
 
 .news-suscribir {
   width: 34%;
-  height: 46px;
+  height: 45px;
   color: #6c6c6c;
   background-color: rgba(219, 219, 219, 0.1);
   border-style: solid;
   border-color: #ebebeb;
   padding: 0 0 0 40px;
-  font-size: 15px;
+  font-size: 13px;
   display: inline-block;
 }
 
@@ -660,10 +659,6 @@ nav label {
   text-transform: uppercase;
   font-size: 0.7rem;
   align-items: center;
-}
-
-.pic-zoom {
-  overflow: hidden;
 }
 
 figure {
