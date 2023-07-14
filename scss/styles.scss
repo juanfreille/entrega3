@@ -13,6 +13,22 @@ img {
     height: auto;
 }
 
+main {
+    margin-bottom: 5% !important;
+}
+
+.contacto__contenedor-form {
+    input {
+        margin-bottom: 2%;
+        margin-top: 0;
+    }
+}
+
+.margen-bottom-2 {
+    margin-bottom: 1% !important;
+}
+
+
 .modal-dialog-mio {
     max-width: fit-content;
 
@@ -357,7 +373,7 @@ img {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 0;
+    margin: 2rem;
     border-color: $color_borde;
     background-color: $color_blanco;
 }

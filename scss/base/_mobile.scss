@@ -4,6 +4,10 @@
         align-items: center;
     }
 
+    main {
+        margin-bottom: 15% !important;
+    }
+
     ::-webkit-scrollbar {
         display: none;
     }
@@ -18,7 +22,8 @@
 
     .title {
         line-height: 36px;
-        font-size: map-get($map: $texto, $key: 'xsplus');
+        font-size: map-get($map: $texto, $key: 'md');
+        margin: 12px;
     }
 
     p {
@@ -57,6 +62,14 @@
 
         label {
             display: block;
+        }
+    }
+
+    .contacto__contenedor-form {
+
+        input {
+            margin-bottom: 5%;
+            margin-top: 0;
         }
     }
 
@@ -300,9 +313,8 @@
     .contacto__contenedor-form {
         width: -webkit-fill-available;
         width: -moz-available;
-        padding-left: 0;
+        padding: 10% 0 0 0;
         text-align: justify;
-        padding-right: 0;
     }
 
     .form-contacto {
@@ -333,10 +345,21 @@
         display: none;
     }
 
+    .margen-bottom-2 {
+        margin-bottom: 2% !important;
+    }
+
+    .margen-bottom-4 {
+        margin-bottom: 4% !important;
+    }
+
+
     .caja-newsletter {
-        width: 100%;
-        margin: 0;
         padding: 0;
+        border: 3px solid burlywood;
+        border-radius: 10px;
+        margin: 1em;
+        width: fit-content;
 
         p {
             margin: 0;
@@ -366,6 +389,8 @@
     .mobile-banner-img {
         width: -webkit-fill-available;
         width: -moz-available;
+        border-radius: 2%;
+        margin: 1em;
     }
 
     .mobile-btn-container {
