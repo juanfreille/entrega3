@@ -12,14 +12,6 @@
         display: none;
     }
 
-    .quienes-somos {
-        br {
-            content: "";
-            display: block;
-            margin: 1rem 0;
-        }
-    }
-
     .title {
         line-height: 36px;
         font-size: map-get($map: $texto, $key: 'md');
@@ -376,12 +368,8 @@
                 display: none;
             }
         }
-
-        br {
-            display: none;
-        }
     }
-
+    
     .suscribir-button {
         width: 90%;
     }

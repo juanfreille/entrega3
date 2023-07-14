@@ -638,7 +638,7 @@ main {
 .quienes-somos br {
   content: "";
   display: block;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .contenedor {
@@ -817,11 +817,6 @@ figcaption {
   }
   ::-webkit-scrollbar {
     display: none;
-  }
-  .quienes-somos br {
-    content: "";
-    display: block;
-    margin: 1rem 0;
   }
   .title {
     line-height: 36px;
@@ -1094,9 +1089,6 @@ figcaption {
     display: block;
   }
   .caja-newsletter h2 span {
-    display: none;
-  }
-  .caja-newsletter br {
     display: none;
   }
   .suscribir-button {
