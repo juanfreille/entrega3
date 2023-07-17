@@ -21,6 +21,17 @@ main {
     input {
         margin-bottom: 2%;
         margin-top: 0;
+        height: 2rem;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .enviarButton {
+
+        input {
+            height: auto;
+        }
+
     }
 }
 
@@ -573,7 +584,7 @@ figcaption {
 }
 
 .form-contacto {
-    color: $color_texto-parrafos;
+    color: $color_items;
     background-color: $color_bg_input;
     background-position: 9px 57%;
     background-repeat: no-repeat;

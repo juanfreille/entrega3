@@ -245,6 +245,12 @@ main {
 .contacto__contenedor-form input {
   margin-bottom: 2%;
   margin-top: 0;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+.contacto__contenedor-form .enviarButton input {
+  height: auto;
 }
 
 .margen-bottom-2 {
@@ -419,7 +425,7 @@ main {
   width: 34%;
   height: 45px;
   color: #6c6c6c;
-  background-color: rgba(219, 219, 219, 0.1);
+  background-color: rgba(219, 219, 219, 0.32);
   border-style: solid;
   border-color: #ebebeb;
   padding: 0 0 0 40px;
@@ -780,8 +786,8 @@ figcaption {
 }
 
 .form-contacto {
-  color: #6c6c6c;
-  background-color: rgba(219, 219, 219, 0.1);
+  color: #333;
+  background-color: rgba(219, 219, 219, 0.32);
   background-position: 9px 57%;
   background-repeat: no-repeat;
   background-size: 20px;
